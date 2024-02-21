@@ -27,7 +27,7 @@ const Page = () => {
 
     setAddField("")
   }
-  const handleKeyUp = (e: KeyboardEvent) => {
+  const handleKeyUp = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if(addField.trim() === '') return false
     if(e.code === 'Enter'){
       dispatch({

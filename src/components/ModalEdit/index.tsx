@@ -12,7 +12,7 @@ const ModalEdit = ({textOfChildToParent, closeModalEdit}: Props) => {
   closeModalEdit()
   
  }
- const handleKeyUp = (e: KeyboardEvent) => {
+ const handleKeyUp = (e: React.KeyboardEvent<HTMLInputElement>) => {
   if(e.code === 'Enter'){
     if(value.trim() === "") return false
     textOfChildToParent(value)
